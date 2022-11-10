@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+<!-- start ng pagimport ng font,stuff and title-->
+<head>
+    <!--start ng internal css-->
+    <style type="text/css">
+        style.css Who has access System properties Type Style Sheet Size 4 KB Storage used 4 KB Location Ecom1 Owner TechAnix Modified 10:19 AM by TechAnix Created 10:49 AM No description Viewers can download * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+        }
+        
+        body {
+            height: 100vh;
+            width: 100%;
+        }
+        
+        .container1 {
+            margin-top: -40px;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 100px;
+        }
+        .container1:after{
+            box-sizing: border-box;
+            content: '';
+            position: absolute;
+            width: 1700px;
+            height: 100%;
+            top: 1px;
+           background-color: black;
+            background-size: cover;
+            filter: blur(0px);
+            z-index: -1;
+            display: flex;
+        }
+
+        .container {
+            margin-top: -40px;
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px 100px;
+        }
+
+        /*yung bg*/
+        .container:after {
+            box-sizing: border-box;
+            content: '';
+            position: absolute;
+            width: 1700px;
+            height: 100%;
+            top: 1px;
+            background: url("AllPics/AboutPics/bg.png") no-repeat center;
+            background-size: cover;
+            filter: blur(0px);
+            z-index: -1;
+            display: flex;
+        }
+        
+        .contact-box {
+            height: 600px;
+            border-width:7px; 
+            border-style:solid; 
+            border-color:black;
+            max-width: 800px;
+            display: grid;
+            grid-template-columns: repeat(auto:auto);
+            justify-content: center;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+        }
+
+        .contact-box1 {
+            height: 600px;
+            border-width:7px; 
+            border-style:solid; 
+            border-color:white;
+            max-width: 600px;
+            display: grid;
+            grid-template-columns: repeat(auto:auto);
+            justify-content: center;
+            text-align: center;
+            background-color: #fff;
+            box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+        }
+        
+        .left {
+            /*ito dapat maayos sa gitna or magkahiwalay*/
+            background: url() no-repeat center;
+            background-size: cover;
+            height: 100%;
+        }
+        
+        .right {
+            padding: 25px 20px;
+        }
+        
+        h4{
+            font-size: 60px;
+            
+        }
+
+        h4:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            height: 4px;
+            width: 50px;
+            border-radius: 2px;
+            background-color: #000000;
+        }
+
+        h2 {
+            font-size: 35px;
+            position: relative;
+            padding: 0 0 10px;
+            margin-bottom: 10px;
+        }
+        
+      
+        
+        .field {
+            width: 100%;
+            border: 2px solid rgba(0, 0, 0, 0);
+            outline: none;
+            background-color: rgba(230, 230, 230, 0.6);
+            padding: 0.5rem 1rem;
+            font-size: 1.1rem;
+            margin-bottom: 22px;
+            transition: .3s;
+        }
+        
+        .field:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+        
+        textarea {
+            min-height: 150px;
+        }
+        
+        .btn {
+            width: 100%;
+            padding: 0.5rem 1rem;
+            background-color: #000000;
+            color: #fff;
+            font-size: 1.1rem;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: .3s;
+        }
+        
+        .btn:hover {
+            background-color: #27ae60;
+        }
+        
+        .field:focus {
+            border: 2px solid rgba(30, 85, 250, 0.47);
+            background-color: #fff;
+        }
+        
+        @media screen and (max-width: 880px) {
+            .contact-box {
+                grid-template-columns: 1fr;
+            }
+            .left {
+                height: 200px;
+            }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Nunito-Light;
+        }
+        
+        @font-face {
+            font-family: Nunito-Light;
+            src: url('Nunito-Light.ttf');
+        }
+        
+        @font-face {
+            font-family: Nunito-ExtraBold;
+            src: url('Nunito-ExtraBold.ttf');
+        }
+
+
+        #hp  {
+        float: right;    
+        margin: 0 0 0 3px;
+        }
+
+        #ip  {
+        float: left;    
+        margin: 0 3px 0 0;
+        }
+
+        /*6 sa baba*/
+        * {
+        box-sizing: border-box;
+        }
+
+        .column {
+        float: left;
+        width: 16.62%;
+        padding: 5px;
+        }
+
+        .row::after {
+        content: "";
+        clear: both;
+        display: table;
+        }
+
+        .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+
+        
+
+    </style>
+    <!--end ng internal css-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - JASM Printing Services</title>
+    <link rel="shortcut icon" href="AllPics/HomePics/jasm water before.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="CSS/shop.css">
+    <link rel="stylesheet" type="text/css" href="CSS/index.css">
+    <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+</head>
+<!-- end ng pagimport ng font,stuff and title-->
+<body>
+    <!--start ng ads-->
+    <div class="SALE">
+        <marquee style="hspace: 10px; ">
+            <h1><span style="font-family: Nunito-ExtraBold; padding-top: 5px;">11.11 DEALS ARE HERE! </span> ㅤ| ㅤCLICK FOR DETAILS ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤUSE CODE <span style="font-family: Nunito-ExtraBold; padding-top: 5px;">"TMK-EPS"</span> FOR THE FIRST 20 PERSONSㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+                <span style="font-family: Nunito-ExtraBold; padding-top: 5px;">FREE PHOTOCARD (1 PIECE)</span> FOR THE FIRST 20 PERSONSㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ11.11 DEALS ARE HERE! </span> ㅤ| ㅤCLICK FOR DETAILS ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤUSE CODE <span style="font-family: Nunito-ExtraBold; padding-top: 5px;">"TMK-EPS"</span>                FOR THE FIRST 20 PERSONSㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+                <span style="font-family: Nunito-ExtraBold; padding-top: 5px;">FREE PHOTOCARD (1 PIECE)</span> FOR THE FIRST 20 PERSONSㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ11.11 DEALS ARE HERE! </span> ㅤ| ㅤCLICK FOR DETAILS ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤUSE CODE <span style="font-family: Nunito-ExtraBold; padding-top: 5px;">"TMK-EPS"</span>                FOR THE FIRST 20 PERSONSㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+                <span style="font-family: Nunito-ExtraBold; padding-top: 5px;">FREE PHOTOCARD (1 PIECE)</span> FOR THE FIRST 20 PERSONSㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ11.11 DEALS ARE HERE! </span> ㅤ| ㅤCLICK FOR DETAILS ㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤUSE CODE <span style="font-family: Nunito-ExtraBold; padding-top: 5px;">"TMK-EPS"</span>                FOR THE FIRST 20 PERSONSㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ
+                <span style="font-family: Nunito-ExtraBold; padding-top: 5px;">FREE PHOTOCARD (1 PIECE)</span> FOR THE FIRST 20 PERSONSㅤㅤㅤㅤㅤㅤㅤㅤㅤㅤ</h2>
+        </marquee>
+    </div>
+    <!--end ng ads-->
+
+     <!--start ng nav bar-->
+     <nav>
+        <a href="Home.html"><img class="logo" src="AllPics/HomePics/logo last try.png" class="logo" style="height: 60px; padding-left: 20px;"></a>
+        <ul>
+            <li><a href="Home.html" class="underline">Home</a></li>
+            <li><a href="Shop.html" class="underline">Shop<a></li>
+            <li><a href="contact.html" class="underline">Contact Us</a></li>
+        </ul>
+        <div class="icons" style="border: black;">
+            <a href="About.html"><img src="AllPics/HomePics/iHuman.png" style="height: 25px; padding-left: 28px;"></a>
+            <img src="AllPics/HomePics/iSearch.png" style="height: 25px; padding-left: 28px;">
+            <a href="Shop.html"><img src="AllPics/HomePics/iBasket.png" style="height: 25px; padding-left: 28px; padding-right: 25px;"></a>
+        </div>
+    </nav>
+    <!--end ng nav bar-->
+    
+    <!--start ng container about us-->
+    <div class="container"  style="margin-top: 0; padding-top: 0;">
+        <div class="contact-box" >
+            <div class="right">
+                <h4>About Us</h4>
+                <br><br>
+                <h2> Jasm Printing Services has been serving our customers for the last 4 years of excellency. Delivering the top-notch quality of designs and ideas for the convinience of our clients. We are located at 15 Vista Verde Ave, Cainta, 1900 Rizal, Philippines. You can visit us everyday from 8:00 am to 6:00pm.</h2>
+            </div>
+        </div>
+    </div>
+    <!--end ng container about us-->
+
+    <!--start ng container ng vision mission-->
+    <div class="container1" style="margin-top: 0; padding-top: 0;">
+        <div class="contact-box1" id="ip">
+            <div class="right">
+                <h4>Vision Statement</h4>
+                <br><br>
+                <h2>  We envision to establish genuine connection to our customers with the purpose of bringing unity and prosperity for the development of the community. Our company shall be the core standard of what exemplar enterprise must be.</h2>
+            </div>
+        </div>
+        <div class="contact-box1" id="hp" style="background-color: black;">
+            <div class="right" style="border: white;">
+                <h4 style="color: white;">Mission Statement</h4>
+                <br><br>
+                <h2 style="color: white;">   Our mission is to help individuals to realize the importance of technology in our daily lives by offering them reliable information and top-notch services. To achieve our vision, we will ought-to deliver the highest quality products available in the industry and showcase our mastery and expertise in our chosen line of work.</h2>
+            </div>
+        </div>
+    </div>
+    <!--end ng container ng vision mission-->
+
+    <!--start ng team info-->
+    <div style="background-color: black;">
+        <br>
+        <h1 style="text-align: left;color:white">Developer's Profile : </h1>
+        <img src="AllPics/AboutPics/tmk logo.png" alt="1" class="center">
+        <br>
+    </div>
+    <!--end ng team info-->
+    
+    <!--start ng team img-->
+    <div class="row" style="background-color: black;">
+        <div class="column">
+            <img src="AllPics/AboutPics/t.png" alt="1" class="center">
+            <img src="AllPics/AboutPics/pictures/ako mask final.png" alt="1" style="border-radius: 50%;width: 100%;">
+            <h3 style="color: #5b44ec; text-align:center">Timothy Forte</h3>
+        </div>
+        <div class="column">
+            <img src="AllPics/AboutPics/m.png" alt="1" class="center">
+            <img src="AllPics/AboutPics/pictures/ako mask final.png" alt="1" style="border-radius: 50%;width: 100%;">
+            <h3 style="color: #5b44ec; text-align:center">Mars Lou Maguddayao</h3>
+        </div>
+        <div class="column">
+            <img src="AllPics/AboutPics/k.png" alt="1" class="center">
+            <img src="AllPics/AboutPics/pictures/ako mask final.png" alt="1" style="border-radius: 50%;width: 100%;">
+            <h3 style="color: #5b44ec; text-align:center">Ken Patrick Garcia</h3>
+        </div>
+        <div class="column">
+            <img src="AllPics/AboutPics/e.png" alt="1" class="center">
+            <img src="AllPics/AboutPics/pictures/ako mask final.png" alt="1" style="border-radius: 50%;width: 100%;">
+            <h3 style="color: #5b44ec; text-align:center">Ejay Buscato</h3>
+        </div>
+        <div class="column">
+            <img src="AllPics/AboutPics/p.png" alt="1" class="center">
+            <img src="AllPics/AboutPics/pictures/ako mask final.png" alt="1" style="border-radius: 50%;width: 100%;">
+            <h3 style="color: #5b44ec; text-align:center">Paulo Amis</h3>
+        </div>
+        <div class="column">
+            <img src="AllPics/AboutPics/s.png" alt="1" class="center">
+            <img src="AllPics/AboutPics/pictures/ako mask final.png" alt="1" style="border-radius: 50%;width: 100%;">
+            <h3 style="color: #5b44ec; text-align:center">Stephen Kim Galedo</h3>
+        </div>
+    </div>
+    <!--end ng team img-->
+
+
+    <!--start ng footer-->
+    <div class="footer ">
+        <div class="threecolumns ">
+            <div class="column-footer ">
+
+                <h1 style=" padding-top: 40px; ; ">
+                    <img src="AllPics/HomePics/iPalette.png" style="height: 13px; "> ALL-UNIQUELY DESIGNED
+                </h1>
+
+                <h1 style=" padding-top: 20px; line-height:; "> We ensure that our merchandise and services is full of creative and fun designs that are uniquely made. #ChooseJASM</h1>
+            </div>
+            <div class="column-footer ">
+                <h1 style="padding-top: 40px; "><img src="AllPics/HomePics/iPrice.png" style="height: 13px; "> ETHICALLY SOURCED</h1>
+                <h1 style="padding-top: 20px; "> We promise that our business are sourced responsibly and does not promote any bad example that may exhibit bad idea to other companies.</h1>
+            </div>
+            <div class="column-footer ">
+                <h1 style="padding-top: 40px; "><img src="AllPics/HomePics/iAsk.png" style="height: 13px; "> GET IN TOUCH</h1>
+                <h1 style="padding-top: 20px; ">Do you have any questions? Please get in touch with us at any time and we 'll be happy to assist you.</h1>
+            </div>
+        </div>
+        <div>
+            <div style="width: 50%; float:left">
+                <h1 style="padding-left: 40px; padding-top: 40px;padding-bottom: 10px; color: white; font-size: 15px;"> NEWSLETTER</h1>
+                <hr style="margin-right: 40px;margin-left: 40px;">
+                <div class="input-group newsletter-form" bis_skin_checked="1">
+                    <input type="email" style="padding: 10px; margin-left: 40px;margin-top: 20px; width: 585px; margin-bottom: 0;" placeholder="Email Address (Ex. johndoe@gmail.com)" id="mail" class="input-group-field" aria-label="your-email@example.com" autocorrect="off"
+                        autocapitalize="off" name="contact[email]">
+                    <span class="input-group-btn">
+                  <input type="submit" id="subscribe" style="padding: 10px;" onclick="alert" >
+                </span>
+                </div>
+            </div>
+            <div style="width: 50%; float:right;">
+                <h1 style="padding-left: 40px; padding-top: 40px;padding-bottom: 10px; color: white; font-size: 15px;"> VISIT AND FOLLOW US</h1>
+                <hr style="margin-right: 40px;margin-left: 40px;">
+                <div class="column " style="padding-left: 40px; padding-top: 25px; padding-bottom: 0;">
+                    <a href="#instagram" class="fa fa-instagram " target="_blank "></a>
+                    <a href="#facebook" class="fa fa-facebook " target="_blank "></a>
+                    <a href="#twitter" class="fa fa-twitter " target="_blank "></a>
+                </div>
+
+            </div>
+        </div>
+        <br>
+    </div>
+    <div class="footer" style="height: 50px;">
+        <div style=" float: left;">
+            <h1 style="padding-left: 40px; color: white; font-size: 15px; text-align: center;"> © JASM Printing Services 2022</h1>
+        </div>
+    </div>
+    <!--end ng footer-->
+    
+</body>
+
+</html>
