@@ -1,0 +1,369 @@
+f/*start ng import ng mga fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Nunito-Light;
+}
+
+@font-face {
+    font-family: Nunito-Light;
+    src: url('Nunito-Light.ttf');
+}
+
+@font-face {
+    font-family: Nunito-ExtraBold;
+    src: url('Nunito-ExtraBold.ttf');
+}
+
+:root {
+    --white-light: rgba(255, 255, 255, 0.5);
+    --alice-blue: #f8f9fa;
+    --carribean-green: #40c9a2;
+    --gray: #ededed;
+}
+/*end ng import ng mga fonts*/
+
+/*start ng ads*/
+.SALE {
+    text-transform: uppercase;
+    font-family: "Avenir Next Rounded", sans-serif;
+    font-weight: 400!important;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    border: 3px solid black;
+}
+
+.SALE h1 {
+    text-align: center;
+    font-size: 11px;
+    letter-spacing: 2px;
+    word-spacing: 4px;
+    color: #fff;
+}
+/*end ng ads*/
+
+/*start ng nav bar/tabs*/
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.logo {
+    padding-right: 1400px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    justify-content: center;
+    align-items: right;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #414141;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.top {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    position: relative;
+}
+/*end ng nav bar/tabs*/
+
+.footer {
+    display: ruby-base;
+    background-color: black;
+    height: 325px;
+    display: block;
+    position: relative;
+}
+
+.threecolumns {
+    display: flex;
+}
+
+.column-footer {
+    float: left;
+    width: 33.33%;
+}
+
+.column-footer h1 {
+    text-decoration: none;
+    font-size: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    color: #fff;
+    font-size: .875rem;
+}
+
+.container {
+    width: 88vw;
+    margin: 0 auto;
+}
+
+.sm-title {
+    font-family: ;
+    padding: 0.6rem 0;
+    text-transform: capitalize;
+}
+
+.sm-title {
+    font-weight: 300;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.lg-title {
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+    padding: 1.3rem 0;
+    opacity: 0.9;
+}
+
+.md-title {
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.products {
+    background: var(--alice-blue);
+    padding: 3.2rem 0;
+}
+
+.products .text-light {
+    text-align: center;
+    width: 70%;
+    margin: 0.9rem auto;
+}
+
+.product {
+    margin: 2rem;
+    position: relative;
+}
+
+.product-content {
+    background: var(--gray);
+    padding: 3rem 0.5rem 2rem 0.5rem;
+    cursor: pointer;
+}
+
+.product-img {
+    background: white;
+    box-shadow: 0 0 20px 10px var(--white-light);
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 70%;
+    transition: background 0.5s ease;
+}
+
+.product-btns {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.4rem;
+    opacity: 0;
+    transition: opacity 0.6s ease;
+}
+
+.btn-cart,
+.btn-buy {
+    background: transparent;
+    border: 1px solid black;
+    padding: 0.8rem 0;
+    width: 125px;
+    font-family: inherit;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+    transition: all 0.6s ease;
+}
+
+.btn-cart {
+    background: black;
+    color: white;
+}
+
+.btn-cart:hover {
+    background: #FFBF00;
+}
+
+.btn-buy {
+    background: white;
+}
+
+.btn-buy:hover {
+    background: #FFBF00;
+    color: #fff;
+}
+
+.product-info {
+    background: white;
+    padding: 2rem;
+}
+
+.product-info-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rating span {
+    color: var(--carribean-green);
+}
+
+.product-name {
+    color: black;
+    display: block;
+    text-decoration: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.product-price {
+    padding-top: 0.6rem;
+    padding-right: 0rem;
+    display: inline-block;
+    font-weight: bold;
+    color: #FFBF00;
+}
+
+.product-price:first-of-type {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.product-img img {
+    transition: transform 0.6s ease;
+}
+
+.product:hover .product-img img {
+    transform: scale(1.1);
+}
+
+.product:hover .product-img {
+    background: white;
+}
+
+.product:hover .product-btns {
+    opacity: 1;
+}
+
+.off-info .sm-title {
+    background: black;
+    color: white;
+    display: inline-block;
+    padding: 0.5rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    z-index: 1;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 992px) {
+    .product-items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .product-col-r-bottom {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .product-items {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .product {
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .products .text-light {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1336px) {
+    .product-items {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .product-collection-wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .flex {
+        height: 60vh;
+    }
+    .product-col-left {
+        height: 121.5vh;
+    }
+}
+
+.img-foot {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#sidebar a {
+    position: absolute;
+    left: -70px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    text-align: right;
+}
+
+#sidebar a:hover {
+    left: 0;
+}
+
+#Prints {
+    top: 20px;
+    background-color: #000000;
+}
+
+#Designs {
+    top: 80px;
+    background-color: #000000;
+}
+
+#Ideas {
+    top: 151px;
+    background-color: #000000;
+}
+
+.collections {
+    height: 400px;
+}
